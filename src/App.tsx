@@ -21,6 +21,8 @@ export type CartItemType = {
   amount: number;
 };
 
+//test
+
 const getProducts = async (): Promise<CartItemType[]> =>
   await (await fetch('https://fakestoreapi.com/products')).json();
 
