@@ -11,8 +11,8 @@ import { Wrapper, StyledButton } from './App.styles';
 import { data } from './data';
 
 const App = () => {
-  const [cartOpen, setCartOpen] = useState(false);
-  const [cartItems, setCartItems] = useState([] as CartItemType[]);
+  const [cartOpen, setCartOpen] = useState<boolean>(false);
+  const [cartItems, setCartItems] = useState<CartItemType[]>([]);
 
   const getTotalItems = (items: CartItemType[]) =>
     items.reduce((ack: number, item) => ack + item.amount, 0);
